@@ -45,7 +45,7 @@ jobs:
             node_modules/.astro
           key: static
 
-      keepalive:
+keepalive:
     runs-on: ubuntu-latest
     permissions:
       actions: write
