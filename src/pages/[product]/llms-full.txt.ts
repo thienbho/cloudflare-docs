@@ -1,17 +1,34 @@
 import type { APIRoute } from "astro";
 import { getCollection } from "astro:content";
 
-export const GET: APIRoute = async () => {
-	const markdown = await getCollection("docs", (e) => {
-		if (!e.body) return false;
+export async function getStaticPaths() {
+	const products = await getCollection("products", (p) => {
+		return p.data.product.group?.toLowerCase() === "developer platform";
+	});
 
+	return products.map((entry) => {
+		return {
+			params: {
+				product: entry.id,
+			},
+			props: {
+				product: entry,
+			},
+		};
+	});
+}
+
+export const GET: APIRoute = async ({ props }) => {
+	const markdown = await getCollection("docs", (e) => {
 		if (
 			e.slug === "warp-client/legal/3rdparty" ||
 			e.slug === "magic-wan/legal/3rdparty"
 		)
 			return false;
 
-		return true;
+		return (
+			e.slug.startsWith(props.product.data.product.url.slice(1, -1)) && e.body
+		);
 	})
 		.then((entries) =>
 			entries.map((entry) => {
