@@ -108,6 +108,7 @@
 /agents/examples/sdk/ /agents/api-reference/agents-api/ 301
 /agents/examples/build-mcp-server/ /agents/api-reference/build-mcp-server/ 301
 /agents/api-reference/build-mcp-server/ /agents/guides/build-mcp-server/ 301
+/agents/api-reference/sdk/ /agents/api-reference/ 301
 
 
 # ai
@@ -1395,6 +1396,7 @@
 /waf/custom-rules/manage-dashboard/ /waf/custom-rules/create-dashboard/ 301
 /waf/security-analytics/ /waf/analytics/security-analytics/ 301
 /waf/custom-rules/use-cases/require-valid-hmac-token/ /waf/custom-rules/use-cases/configure-token-authentication/ 301
+/waf/custom-rules/use-cases/block-ip-reputation/ /waf/custom-rules/use-cases/block-attack-score/ 301
 /waf/tools/scrape-shield/server-side-excludes/ /waf/tools/scrape-shield/ 301
 /waf/rate-limiting-rules/create-account-dashboard/ /waf/account/rate-limiting-rulesets/create-dashboard/ 301
 /waf/managed-rules/deploy-account-dashboard/ /waf/account/managed-rulesets/deploy-dashboard/ 301
