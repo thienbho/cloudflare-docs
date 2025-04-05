@@ -1198,7 +1198,8 @@
 
 # r2
 /r2/platform/s3-compatibility/api/ /r2/api/s3/api/ 301
-/r2/platform/s3-compatibility/tokens/ /r2/api/s3/tokens/ 301
+/r2/platform/s3-compatibility/tokens/ /r2/api/tokens/ 301
+/r2/api/s3/tokens/ /r2/api/tokens/ 301
 /r2/runtime-apis/ /r2/api/workers/workers-api-reference/ 301
 /r2/data-access/ /r2/api/ 301
 /r2/data-access/public-buckets/ /r2/buckets/public-buckets/ 301
@@ -1557,8 +1558,8 @@
 
 # Fine-tunes
 /workers-ai/fine-tunes/ /workers-ai/features/fine-tunes/ 301
-/workers-ai/fine-tunes/public-loras /workers-ai/features/fine-tunes/public-loras/ 301
-/workers-ai/fine-tunes/loras /workers-ai/features/fine-tunes/loras/ 301
+/workers-ai/fine-tunes/public-loras/ /workers-ai/features/fine-tunes/public-loras/ 301
+/workers-ai/fine-tunes/loras/ /workers-ai/features/fine-tunes/loras/ 301
 
 # Prompting
 /workers-ai/guides/prompting/ /workers-ai/features/prompting/ 301
